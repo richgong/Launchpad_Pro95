@@ -14,7 +14,7 @@ Thank God for open source software!
 
 How is this different from the Official Launchpad Pro95 script?
 
-(Click here for diff)[https://github.com/hdavid/Launchpad_Pro95/compare/master...richgong:master]
+See here for diff: https://github.com/hdavid/Launchpad_Pro95/compare/master...richgong:master
 
 ---
 
