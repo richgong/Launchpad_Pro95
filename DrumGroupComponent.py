@@ -6,6 +6,7 @@ from _Framework.Control import PlayableControl, ButtonControl, control_matrix
 from .consts import ACTION_BUTTON_COLORS
 from .SlideComponent import SlideComponent, Slideable, ScrollComponent
 from .gong_utils import log
+from .SkinMK2 import Colors
 
 
 BASE_DRUM_RACK_NOTE = 36
@@ -214,8 +215,17 @@ class DrumGroupComponent(ResettableSlideComponent, Slideable):
 				if pad:
 					self._update_pad_led(pad, button, soloed_pads)
 
+
 	def _gong_get_pad_color(self, pad, button):
-		log("Yo pad: {} {}", pad, button)
+		# log("Yo pad: {} {} {} {}", pad.name, button, dir(pad), dir(button))
+		# <DrumPad.DrumPad object at 0x120372e20> ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__nonzero__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_live_ptr', 'add_chains_listener', 'add_mute_listener', 'add_name_listener', 'add_solo_listener', 'canonical_parent', 'chains', 'chains_has_listener', 'delete_all_chains', 'mute', 'mute_has_listener', 'name', 'name_has_listener', 'note', 'remove_chains_listener', 'remove_mute_listener', 'remove_name_listener', 'remove_solo_listener', 'solo', 'solo_has_listener']
+		# <_Framework.Control.State object at 0x12036e150> ['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_channel', '_color', '_control_element', '_delay_task', '_disabled_color', '_enabled', '_event_listener_required', '_event_listeners', '_get_channel', '_get_color', '_get_disabled_color', '_get_enabled', '_get_identifier', '_get_pressed_color', '_has_delayed_event', '_identifier', '_is_pressed', '_manager', '_notifications_enabled', '_on_pressed_delayed', '_on_value', '_playable', '_press_button', '_pressed_color', '_pressed_delayed_listener', '_pressed_listener', '_register_value_slot', '_registered_disconnectables', '_release_button', '_released_delayed_listener', '_released_immediately_listener', '_released_listener', '_repeat', '_repeat_task', '_send_current_color', '_set_channel', '_set_color', '_set_disabled_color', '_set_enabled', '_set_identifier', '_set_pressed_color', '_update_script_forwarding', '_value_listener', '_value_slot', 'channel', 'color', 'coordinate', 'disabled_color', 'disconnect', 'disconnect_disconnectable', 'enabled', 'find_disconnectable', 'has_disconnectable', 'identifier', 'index', 'is_momentary', 'is_pressed', 'pressed_color', 'register_disconnectable', 'register_slot', 'register_slot_manager', 'set_control_element', 'set_playable', 'unregister_disconnectable', 'update']
+		# log("Yo pad: {}", pad.name)
+		name = pad.name.lower()
+		# if self.SNARE_RX.match(name):
+		for x in Colors.DrumGroup.GONG_PADS:
+			if x in name:
+				return 'DrumGroup.%s' % x
 		return 'DrumGroup.PadFilled'
 
 	def _update_pad_led(self, pad, button, soloed_pads):
