@@ -8,7 +8,13 @@ I'm using this script to customize the hell out of my Ableton Live, via my Launc
 
 Forked from the original Launchpad Pro95 script.
 
-Thank God for open source software! 
+Thank God for open source software!
+
+## See diff
+
+How is this different from the Official Launchpad Pro95 script?
+
+(Click here for diff)[https://github.com/hdavid/Launchpad_Pro95/compare/master...richgong:master]
 
 ---
 
