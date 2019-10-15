@@ -927,6 +927,8 @@ class Launchpad_Pro95(IdentifiableControlSurface, OptimizedControlSurface):
 		focused_track_is_drum_track = self._drum_group_finder.drum_group is not None
 		button = self._midimap['Note_Mode_Button']
 		if focused_track_is_drum_track:
+			# GONG) see SkinKM2.py, but I don't think this ever gets called
+			# log("_update_note_mode_button YO")
 			button.default_states = {True: 'Mode.Drum.On', False: 'Mode.Drum.Off'}
 		else:
 			button.default_states = {True: 'Mode.Note.On', False: 'Mode.Note.Off'}

@@ -252,6 +252,7 @@ class Colors:
 			Off = Rgb.AMBER_HALF
 				
 	class DrumGroup:
+		# GONG) This is for customizing drum pad colors
 		PadEmpty = Rgb.BLACK
 		PadFilled = Rgb.YELLOW
 		PadSelected = Rgb.LIGHT_BLUE

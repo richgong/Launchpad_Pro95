@@ -4,9 +4,10 @@ from .ScaleComponent import ScaleComponent
 from _Framework.ToggleComponent import ToggleComponent
 from _Framework.Control import PlayableControl, ButtonControl, ToggleButtonControl, control_matrix
 from .consts import ACTION_BUTTON_COLORS
+from .gong_utils import log
 
 class NoteComponent(ControlSurfaceComponent):
-	
+
 	matrix = control_matrix(PlayableControl)
 
 	def __init__(self, control_surface = None, feedback_channels = [0,1,2], non_feedback_channel = 15, get_pattern = None, *a, **k):
@@ -16,13 +17,14 @@ class NoteComponent(ControlSurfaceComponent):
 		self._non_feedback_channel = non_feedback_channel
 		self._feedback_channels = feedback_channels
 		super(NoteComponent, self).__init__(*a, **k)
-	
-	
+
+
 	def update_matrix_mapping(self, playable = False):
+		# GONG: this only gets called when you switch to Scale Mode
+		# log("update_matrix_mapping: playable={}", playable)
 		pattern =  self._get_pattern()
 		max_j = 8 -1#self.matrix.width - 1
 		note_channel = [0 for i in range(128)]
-		
 		lala = 1
 		for index, button in enumerate(self.matrix):
 			row, col = button.coordinate
@@ -48,20 +50,20 @@ class NoteComponent(ControlSurfaceComponent):
 				button.channel = self._non_feedback_channel
 				button.color = "Note.Pads.Invalid"
 				button.set_playable(False)
-			
-			
-			
+
+
+
 	def set_matrix(self, matrix):
 		if not matrix or not self._layout_set:
 			self.matrix.set_control_element(matrix)
 			self.update_matrix_mapping()
 			self._layout_set = bool(matrix)
-	
+
 	# def set_scene_buttons(self, matrix):
 	# 		if not matrix or not self._layout_set_scene:
 	# 			self.scene_buttons.set_control_element(matrix)
 	# 			self._layout_set_scene = bool(matrix)
-	
+
 	@matrix.pressed
 	def drum_matrix(self, pad):
 		pass
@@ -85,7 +87,7 @@ class NoteComponent(ControlSurfaceComponent):
 		# 			self.notify_pressed_pads()
 		# 		if self.mute_button.is_pressed or self.solo_button.is_pressed:
 		# 			self._update_led_feedback()
-		
+
 	@matrix.released
 	def drum_matrix(self, pad):
 		pass

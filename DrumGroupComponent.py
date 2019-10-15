@@ -5,6 +5,9 @@ from _Framework.SubjectSlot import subject_slot_group, subject_slot
 from _Framework.Control import PlayableControl, ButtonControl, control_matrix
 from .consts import ACTION_BUTTON_COLORS
 from .SlideComponent import SlideComponent, Slideable, ScrollComponent
+from .gong_utils import log
+
+
 BASE_DRUM_RACK_NOTE = 36
 DEFAULT_POSITION = 9
 
@@ -211,6 +214,10 @@ class DrumGroupComponent(ResettableSlideComponent, Slideable):
 				if pad:
 					self._update_pad_led(pad, button, soloed_pads)
 
+	def _gong_get_pad_color(self, pad, button):
+		log("Yo pad: {} {}", pad, button)
+		return 'DrumGroup.PadFilled'
+
 	def _update_pad_led(self, pad, button, soloed_pads):
 		button_color = 'DrumGroup.PadEmpty'
 		if pad == self._selected_drum_pad:
@@ -225,7 +232,7 @@ class DrumGroupComponent(ResettableSlideComponent, Slideable):
 		elif pad.chains:
 			if soloed_pads and not pad.solo:
 				if not pad.mute:
-					button_color = 'DrumGroup.PadFilled'
+					button_color = self._gong_get_pad_color(pad, button)
 				else:
 					button_color = 'DrumGroup.PadMuted'
 			elif not soloed_pads and pad.mute:
@@ -233,7 +240,7 @@ class DrumGroupComponent(ResettableSlideComponent, Slideable):
 			elif soloed_pads and pad.solo:
 				button_color = 'DrumGroup.PadSoloed'
 			else:
-				button_color = 'DrumGroup.PadFilled'
+				button_color = self._gong_get_pad_color(pad, button)
 		else:
 			button_color = 'DrumGroup.PadEmpty'
 		button.color = button_color
