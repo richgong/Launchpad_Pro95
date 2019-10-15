@@ -45,7 +45,7 @@ class MidiMap(SpecialMidiMap):
 	def __init__(self, *a, **k):
 		
 		super(MidiMap, self).__init__(*a, **k)
-		log("Started up. Python version: {}", sys.version)
+		log("Started up. Python version: version={} paths={}", sys.version, sys.path)
 		
 		#left buttons
 		left_button_names = (
@@ -1075,5 +1075,5 @@ class Launchpad_Pro95(IdentifiableControlSurface, OptimizedControlSurface):
 					super(Launchpad_Pro95, self).handle_sysex(midi_bytes)
 			else:
 				super(Launchpad_Pro95, self).handle_sysex(midi_bytes)
-			
-			
+
+
