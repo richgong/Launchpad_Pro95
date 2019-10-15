@@ -37,11 +37,15 @@ import consts
 NUM_TRACKS = 8
 NUM_SCENES = 8
 
+from .gong_utils import log
+import sys
+
 class MidiMap(SpecialMidiMap):
 
 	def __init__(self, *a, **k):
 		
 		super(MidiMap, self).__init__(*a, **k)
+		log("Started up. Python version: {}", sys.version)
 		
 		#left buttons
 		left_button_names = (
