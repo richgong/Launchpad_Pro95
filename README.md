@@ -1,3 +1,19 @@
+# Launchpad Pro95 - Gong Edition
+
+## New README
+
+Hi, Richard Gong here.
+
+I'm using this script to customize the hell out of my Ableton Live, via my Launchpad Pro.
+
+Forked from the original Launchpad Pro95 script.
+
+Thank God for open source software! 
+
+---
+
+## Old README
+
 Launchpad Pro95 : Improved Novation Launchpad Pro remote scripts with Instrument Mode, Scales, Step Sequencer and Device Controller.
 
 These scripts are modified version of Ableton Live 9.5 scripts for Novation Launchpad and provide the same functionality but add support for editing the midi clips using a step sequencer and Device Controller. It also replaces Note Mode one with an Instrument Mode mimicking Ableton Push Instrument Mode behaviour.
