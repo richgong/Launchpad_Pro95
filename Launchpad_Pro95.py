@@ -45,7 +45,7 @@ class MidiMap(SpecialMidiMap):
 	def __init__(self, *a, **k):
 		
 		super(MidiMap, self).__init__(*a, **k)
-		log("Started up. Python version: version={} paths={}", sys.version, sys.path)
+		log("Started up. Python version: executable={} version={} paths={}", sys.executable, sys.version, sys.path)
 		
 		#left buttons
 		left_button_names = (

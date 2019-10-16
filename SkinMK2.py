@@ -252,33 +252,32 @@ class Colors:
 			Off = Rgb.AMBER_HALF
 				
 	class DrumGroup:
-		GONG_PADS = ['snare', 'clap', 'kick', 'closed', 'open', 'tom', 'roto', 'crash', 'ride', 'rim', 'shake', 'cymbal', 'cabasa', 'stick', 'conga', 'tamb']
+		GONG_PADS = ['snare', 'clap', 'kick', 'closed', 'open', 'tom', 'roto', 'crash', 'ride', 'rim', 'shake', 'cymbal', 'cabasa', 'conga', 'tamb', 'perc', 'stick']
 		# GONG) Custom pad colors
-		kick = Rgb.PURPLE_HALF
+		kick = Rgb.DARK_BLUE
 		roto = tom = Rgb.PURPLE
-		conga = Rgb.MINT
+		conga = perc = Rgb.PURPLE_HALF
+
+		snare = Rgb.YELLOW
+		stick = rim = Rgb.YELLOW_HALF
+		clap = Rgb.LIGHT_BLUE
 
 		# Amber = Orange; Amber Half = Yellow half
-		cabasa = shake = Rgb.GREEN_HALF
+		cabasa = shake = Rgb.DARK_GREY
 		open = Rgb.ORANGE
 		closed = Rgb.ORANGE_HALF  # same as Amber half
 		ride = tamb = Rgb.RED_HALF
 		cymbal = crash = Rgb.RED
 
-		clap = Rgb.BLUE
-		snare = Rgb.WHITE
-		stick = rim = Rgb.DARK_GREY
-
-
 		# GONG) This is for customizing drum pad colors
 		PadEmpty = Rgb.BLACK
-		PadFilled = Rgb.YELLOW
-		PadSelected = Rgb.LIGHT_BLUE
-		PadSelectedNotSoloed = Rgb.LIGHT_BLUE
+		PadFilled = Rgb.WHITE  # for unknown pad type
+		PadSelected = Rgb.GREEN_HALF # Rgb.LIGHT_BLUE
+		PadSelectedNotSoloed = Rgb.GREEN_HALF
 		PadMuted = Rgb.DARK_ORANGE
-		PadMutedSelected = Rgb.LIGHT_BLUE
+		PadMutedSelected = Rgb.GREEN_HALF
 		PadSoloed = Rgb.DARK_BLUE
-		PadSoloedSelected = Rgb.LIGHT_BLUE
+		PadSoloedSelected = Rgb.GREEN_HALF
 		PadInvisible = Rgb.BLACK
 		PadAction = Rgb.RED
 		class Mute:
