@@ -252,11 +252,11 @@ class Colors:
 			Off = Rgb.AMBER_HALF
 				
 	class DrumGroup:
-		GONG_PADS = ['snare', 'clap', 'kick', 'closed', 'open', 'tom', 'roto', 'crash', 'ride', 'rim', 'shake', 'cymbal', 'cabasa', 'conga', 'tamb', 'perc', 'stick']
+		GONG_PADS = ['snare', 'clap', 'kick', 'closed', 'open', 'tom', 'roto', 'crash', 'ride', 'shake', 'cymbal', 'cabasa', 'conga', 'bongo', 'tamb', 'perc', 'stick', 'hat', 'rim']
 		# GONG) Custom pad colors
 		kick = Rgb.DARK_BLUE
 		roto = tom = Rgb.PURPLE
-		conga = perc = Rgb.PURPLE_HALF
+		bongo = conga = perc = Rgb.PURPLE_HALF
 
 		snare = Rgb.YELLOW
 		stick = rim = Rgb.YELLOW_HALF
@@ -265,7 +265,7 @@ class Colors:
 		# Amber = Orange; Amber Half = Yellow half
 		cabasa = shake = Rgb.DARK_GREY
 		open = Rgb.ORANGE
-		closed = Rgb.ORANGE_HALF  # same as Amber half
+		hat = closed = Rgb.ORANGE_HALF  # same as Amber half
 		ride = tamb = Rgb.RED_HALF
 		cymbal = crash = Rgb.RED
 

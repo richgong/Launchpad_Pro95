@@ -230,7 +230,7 @@ class DrumGroupComponent(ResettableSlideComponent, Slideable):
 
 	def _update_pad_led(self, pad, button, soloed_pads):
 		button_color = 'DrumGroup.PadEmpty'
-		if pad == self._selected_drum_pad:
+		"""if pad == self._selected_drum_pad:
 			if soloed_pads and not pad.solo and not pad.mute:
 				button_color = 'DrumGroup.PadSelectedNotSoloed'
 			elif pad.mute and not pad.solo:
@@ -238,8 +238,8 @@ class DrumGroupComponent(ResettableSlideComponent, Slideable):
 			elif soloed_pads and pad.solo:
 				button_color = 'DrumGroup.PadSoloedSelected'
 			else:
-				button_color = 'DrumGroup.PadSelected'
-		elif pad.chains:
+				button_color = 'DrumGroup.PadSelected'"""
+		if pad.chains:
 			if soloed_pads and not pad.solo:
 				if not pad.mute:
 					button_color = self._gong_get_pad_color(pad, button)
