@@ -133,7 +133,7 @@ class Colors:
 			Locked = Rgb.RED
 		class Slider:
 			On = Rgb.PURPLE
-			Off = Rgb.PURPLE_HALF
+			Off = Rgb.DARK_GREY
 		class PrecisionSlider:
 			On = Rgb.DARK_BLUE
 			Off = Rgb.DARK_BLUE_HALF
