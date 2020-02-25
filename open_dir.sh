@@ -1,1 +1,1 @@
-open ~/Library/Preferences/Ableton/Live\ 10.1.4/
+open ~/Library/Preferences/Ableton/

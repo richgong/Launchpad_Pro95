@@ -288,8 +288,8 @@ class Colors:
 			Off = Rgb.DARK_BLUE
 			
 	class Note:
-		FeedbackRecord = Rgb.RED
-		Feedback = Rgb.GREEN
+		FeedbackRecord = Rgb.GREEN # GONG (from Red)
+		Feedback = Rgb.GREEN # GONG (from Green)
 		class Octave:
 			On = Rgb.GREEN
 			Off = Rgb.GREEN_HALF
