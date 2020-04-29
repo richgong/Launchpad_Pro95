@@ -254,8 +254,8 @@ class Colors:
 	class DrumGroup:
 		GONG_PADS = ['snare', 'clap', 'kick', 'closed', 'open', 'tom', 'roto', 'crash', 'ride', 'shake', 'cymbal', 'cabasa', 'conga', 'bongo', 'tamb', 'perc', 'stick', 'hat', 'rim']
 		# GONG) Custom pad colors
-		kick = roto = tom = Rgb.PURPLE
-		bongo = conga = perc = Rgb.PURPLE_HALF
+		kick = Rgb.PURPLE
+		roto = tom = bongo = conga = perc = Rgb.PURPLE_HALF
 
 		snare = Rgb.YELLOW
 		stick = rim = Rgb.YELLOW_HALF
