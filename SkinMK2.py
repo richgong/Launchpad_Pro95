@@ -265,8 +265,8 @@ class Colors:
 		cabasa = shake = Rgb.DARK_GREY
 		open = Rgb.ORANGE
 		hat = closed = Rgb.ORANGE_HALF  # same as Amber half
-		ride = tamb = kick = Rgb.DARK_BLUE
-		cymbal = crash = Rgb.RED
+		ride = tamb = Rgb.DARK_BLUE_HALF
+		cymbal = crash = Rgb.DARK_BLUE
 
 		# GONG) This is for customizing drum pad colors
 		PadEmpty = Rgb.BLACK
