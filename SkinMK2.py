@@ -258,7 +258,7 @@ class Colors:
 		roto = tom = bongo = conga = perc = Rgb.PURPLE_HALF
 
 		snare = Rgb.YELLOW
-		stick = rim = Rgb.YELLOW_HALF
+		stick = rim = Rgb.LIGHT_BLUE_HALF
 		clap = Rgb.LIGHT_BLUE
 
 		# Amber = Orange; Amber Half = Yellow half
