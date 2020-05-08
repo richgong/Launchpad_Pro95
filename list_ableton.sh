@@ -1,1 +1,1 @@
-ls ~/Library/Preferences/Ableton/
+ls -ltrh ~/Library/Preferences/Ableton/

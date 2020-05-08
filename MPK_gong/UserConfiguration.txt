@@ -7,13 +7,16 @@
 # and channels from 0-15.
 
 [Globals]
+
 # The channel that the controller should send on
-GlobalChannel: 0
+GlobalChannel: 8
+
 # If your controller is connected via USB, replace ControllerName
 # with the name of the respective port. Live will then try to
 # recognize the ports for you when you select your Instant-Mappings
-InputName: ControllerName
-OutputName: ControllerName
+InputName: MPKmini2
+OutputName: MPKmini2
+
 # If your controller has pads that send notes, you can use them to
 # play the visible pads in your DrumRacks. Just replace the -1 for
 # the note (and channel) of the respective pad. The arrangement of
@@ -24,22 +27,23 @@ OutputName: ControllerName
 #  13    14    15    16
 # (If you leave the channel of a pad at -1, Live will assume that
 #  the pad uses the global channel)
-Pad1Note: -1
-Pad2Note: -1
-Pad3Note: -1
-Pad4Note: -1
-Pad5Note: -1
-Pad6Note: -1
-Pad7Note: -1
-Pad8Note: -1
-Pad9Note: -1
-Pad10Note: -1
-Pad11Note: -1
-Pad12Note: -1
-Pad13Note: -1
-Pad14Note: -1
-Pad15Note: -1
-Pad16Note: -1
+Pad1Note: 48
+Pad2Note: 49
+Pad3Note: 50
+Pad4Note: 51
+Pad5Note: 44
+Pad6Note: 45
+Pad7Note: 46
+Pad8Note: 47
+Pad9Note: 40
+Pad10Note: 41
+Pad11Note: 42
+Pad12Note: 43
+Pad13Note: 36
+Pad14Note: 37
+Pad15Note: 38
+Pad16Note: 39
+
 Pad1Channel: -1
 Pad2Channel: -1
 Pad3Channel: -1
@@ -64,14 +68,14 @@ Pad16Channel: -1
 # the channel for each controller if it differs from the global
 # channel (if you leave the channel of an encoder at -1, Live
 # will assume that the encoder uses the global channel).
-Encoder1: -1
-Encoder2: -1
-Encoder3: -1
-Encoder4: -1
-Encoder5: -1
-Encoder6: -1
-Encoder7: -1
-Encoder8: -1
+Encoder1: 37
+Encoder2: 38
+Encoder3: 39
+Encoder4: 40
+Encoder5: 41
+Encoder6: 42
+Encoder7: 43
+Encoder8: 44
 EncoderChannel1: -1
 EncoderChannel2: -1
 EncoderChannel3: -1
@@ -147,14 +151,14 @@ Send2Knob5: -1
 Send2Knob6: -1
 Send2Knob7: -1
 Send2Knob8: -1
-TrackArmButton1: -1
-TrackArmButton2: -1
-TrackArmButton3: -1
-TrackArmButton4: -1
-TrackArmButton5: -1
-TrackArmButton6: -1
-TrackArmButton7: -1
-TrackArmButton8: -1
+TrackArmButton1: 29
+TrackArmButton2: 30
+TrackArmButton3: 31
+TrackArmButton4: 32
+TrackArmButton5: 33
+TrackArmButton6: 34
+TrackArmButton7: 35
+TrackArmButton8: 36
 VolumeMapMode: Absolute
 SendsMapMode: Absolute
 
