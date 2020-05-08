@@ -16,6 +16,24 @@ How is this different from the Official Launchpad Pro95 script?
 
 See here for diff: https://github.com/hdavid/Launchpad_Pro95/compare/master...richgong:master
 
+
+## To install
+
+```
+cd "/Applications/Ableton Live 10 Suite.app/Contents/App-Resources/MIDI Remote Scripts"
+ln -s ~/c/Launchpad_Pro95/ Launchpad_Pro95
+# then set "Control Surface" to Launchpad_Pro95 in Preferences
+```
+
+## MPK Mini
+
+To get this going, I ran
+
+```
+pip install uncompyle6
+uncompyle6 *.pyc
+```
+
 ---
 
 ## Old README
