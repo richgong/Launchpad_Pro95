@@ -1,1 +1,0 @@
-open ~/Library/Preferences/Ableton/
