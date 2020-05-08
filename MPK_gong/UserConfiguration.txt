@@ -9,7 +9,9 @@
 [Globals]
 
 # The channel that the controller should send on
-GlobalChannel: 8
+# NOTE: this is real_channel - 1 (since the channel index starts with 0, not 1)
+GlobalChannel: 7
+
 
 # If your controller is connected via USB, replace ControllerName
 # with the name of the respective port. Live will then try to
@@ -117,14 +119,14 @@ LockButton: -1
 # If all sliders use the global channel to send their data,
 # you can leave the channels at -1. You can, of course, use
 # encoders or knobs instead of sliders.
-VolumeSlider1: -1
-VolumeSlider2: -1
-VolumeSlider3: -1
-VolumeSlider4: -1
-VolumeSlider5: -1
-VolumeSlider6: -1
-VolumeSlider7: -1
-VolumeSlider8: -1
+VolumeSlider1: 37
+VolumeSlider2: 38
+VolumeSlider3: 39
+VolumeSlider4: 40
+VolumeSlider5: 41
+VolumeSlider6: 42
+VolumeSlider7: 43
+VolumeSlider8: 44
 Slider1Channel: -1
 Slider2Channel: -1
 Slider3Channel: -1
