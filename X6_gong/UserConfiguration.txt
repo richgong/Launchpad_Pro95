@@ -1,0 +1,30 @@
+# Config File for User-defined Instant Mappings
+
+# We assume that the controls on your MIDI controller
+# send CCs (except for pads). All controls that do not have
+# an explicit channel setting are expected to use the
+# global channel. CCs & Notes are counted from 0-127
+# and channels from 0-15.
+
+[Globals]
+
+# The channel that the controller should send on
+# NOTE: this is real_channel - 1 (since the channel index starts with 0, not 1)
+GlobalChannel: 7
+
+
+# If your controller is connected via USB, replace ControllerName
+# with the name of the respective port. Live will then try to
+# recognize the ports for you when you select your Instant-Mappings
+InputName: X6mini
+OutputName: X6mini
+
+
+[TransportControls]
+# The transport buttons are also expected not to be toggles.
+StopButton: 67
+PlayButton: 66
+RecButton: -1
+LoopButton: 65
+RwdButton: 62
+FfwdButton: 63

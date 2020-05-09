@@ -27,8 +27,6 @@ OutputName: MPKmini2
 #   5     6     7     8
 #   9    10    11    12
 #  13    14    15    16
-# (If you leave the channel of a pad at -1, Live will assume that
-#  the pad uses the global channel)
 Pad1Note: 48
 Pad2Note: 49
 Pad3Note: 50
@@ -70,14 +68,14 @@ Pad16Channel: -1
 # the channel for each controller if it differs from the global
 # channel (if you leave the channel of an encoder at -1, Live
 # will assume that the encoder uses the global channel).
-Encoder1: 37
-Encoder2: 38
-Encoder3: 39
-Encoder4: 40
-Encoder5: 41
-Encoder6: 42
-Encoder7: 43
-Encoder8: 44
+Encoder1: 41
+Encoder2: 42
+Encoder3: 43
+Encoder4: 44
+Encoder5: 45
+Encoder6: 46
+Encoder7: 47
+Encoder8: 48
 EncoderChannel1: -1
 EncoderChannel2: -1
 EncoderChannel3: -1
@@ -100,33 +98,35 @@ EncoderChannel8: -1
 # - AccelBinaryOffset
 # Consult the controller's documentation to find out which mode to use.
 EncoderMapMode: Absolute
+
 # Buttons used here are expected to not be toggles (i.e., sending
 # value 0 every second time you press it).
-Bank1Button: -1
-Bank2Button: -1
-Bank3Button: -1
-Bank4Button: -1
-Bank5Button: -1
-Bank6Button: -1
-Bank7Button: -1
-Bank8Button: -1
-NextBankButton: -1
-PrevBankButton: -1
-LockButton: -1
+Bank1Button: 51
+Bank2Button: 52
+Bank3Button: 53
+Bank4Button: 54
+Bank5Button: 55
+Bank6Button: 56
+Bank7Button: 57
+Bank8Button: 58
+LockButton: 16
+PrevBankButton: 17
+NextBankButton: 18
+
 
 [MixerControls]
 # Again enter the appropriate CCs for the respective controls.
 # If all sliders use the global channel to send their data,
 # you can leave the channels at -1. You can, of course, use
 # encoders or knobs instead of sliders.
-VolumeSlider1: 37
-VolumeSlider2: 38
-VolumeSlider3: 39
-VolumeSlider4: 40
-VolumeSlider5: 41
-VolumeSlider6: 42
-VolumeSlider7: 43
-VolumeSlider8: 44
+VolumeSlider1: 31
+VolumeSlider2: 32
+VolumeSlider3: 33
+VolumeSlider4: 34
+VolumeSlider5: 35
+VolumeSlider6: 36
+VolumeSlider7: 37
+VolumeSlider8: 38
 Slider1Channel: -1
 Slider2Channel: -1
 Slider3Channel: -1
@@ -153,24 +153,22 @@ Send2Knob5: -1
 Send2Knob6: -1
 Send2Knob7: -1
 Send2Knob8: -1
-TrackArmButton1: 29
-TrackArmButton2: 30
-TrackArmButton3: 31
-TrackArmButton4: 32
-TrackArmButton5: 33
-TrackArmButton6: 34
-TrackArmButton7: 35
-TrackArmButton8: 36
+TrackArmButton1: 21
+TrackArmButton2: 22
+TrackArmButton3: 23
+TrackArmButton4: 24
+TrackArmButton5: 25
+TrackArmButton6: 26
+TrackArmButton7: 27
+TrackArmButton8: 28
 VolumeMapMode: Absolute
 SendsMapMode: Absolute
 
 [TransportControls]
 # The transport buttons are also expected not to be toggles.
-StopButton: -1
-PlayButton: -1
+StopButton: 67
+PlayButton: 66
 RecButton: -1
 LoopButton: -1
-RwdButton: -1
-FfwdButton: -1
-
-
+RwdButton: 62
+FfwdButton: 63
