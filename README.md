@@ -27,7 +27,7 @@ ln -s ~/c/Launchpad_Pro95/ Launchpad_Pro95
 
 ## MPK Mini
 
-To get this going, I ran
+For MPK Mini, I copied the .pyc files from "MIDI Remote Scripts" and ran
 
 ```
 pip install uncompyle6
