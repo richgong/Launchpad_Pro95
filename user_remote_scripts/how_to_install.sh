@@ -1,1 +1,1 @@
-../dir_prefs.sh
+../how_to_install.sh
