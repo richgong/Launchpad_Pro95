@@ -20,7 +20,9 @@ See here for diff: https://github.com/hdavid/Launchpad_Pro95/compare/master...ri
 ## To install
 
 ```
-cd "/Applications/Ableton Live 10 Suite.app/Contents/App-Resources/MIDI Remote Scripts"
+cd "/Applications/Ableton Live 10 Suite.app/Contents/App-Resources/MIDI Remote Scripts" # mac
+cd /c/ProgramData/Ableton/Live\ 10\ Suite/Resources/MIDI\ Remote\ Scripts # windows
+
 ln -s ~/c/Launchpad_Pro95/ Launchpad_Pro95
 # then set "Control Surface" to Launchpad_Pro95 in Preferences
 ```
