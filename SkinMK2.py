@@ -5,8 +5,8 @@ from _Framework.ButtonElement import Color
 class Colors:
 	
 	class DefaultButton:
-		On = Rgb.GREEN
-		Off = Rgb.GREEN_HALF
+		On = Rgb.YELLOW # GONG: from GREEN
+		Off = Rgb.YELLOW_HALF # GONG: from GREEN_HALF
 		Disabled = Rgb.BLACK
 
 	class Mode: #mode buttons colour
@@ -290,8 +290,8 @@ class Colors:
 		FeedbackRecord = Rgb.RED # GONG (from Red)
 		Feedback = Rgb.GREEN # GONG (from Green)
 		class Octave:
-			On = Rgb.GREEN
-			Off = Rgb.GREEN_HALF
+			On = Rgb.WHITE # GONG (from GREEN)
+			Off = Rgb.DARK_GREY # GONG (from GREEN_HALF)
 		class Scale:
 			On = Rgb.AMBER
 			Off = Rgb.AMBER_HALF
@@ -310,8 +310,8 @@ class Colors:
 			On = Rgb.RED
 			Off = Rgb.RED_HALF
 		class Key:		
-			On = Rgb.GREEN
-			Off = Rgb.GREEN_HALF
+			On = Rgb.YELLOW  # GONG (from GREEN)
+			Off = Rgb.YELLOW_HALF  # GONG (from GREEN_HALF)
 		CircleOfFifths = Rgb.BLUE
 		RelativeScale = Rgb.BLUE
 		class Octave:
